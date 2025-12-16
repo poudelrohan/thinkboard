@@ -10,7 +10,7 @@ const NoteCard = ({note}) => {
         <div className='card-body'>
             <h3 className='card-title text-base-content'>{note.title}</h3>
             <p className='text-base-content/70 line-clamp-3'>{note.content}</p>
-            <div className='card-actins justify-between items-center mt-4'>
+            <div className='card-actions flex justify-between items-center mt-4'>
                 <span className='text-sm text-base-content/60'>{formatDate(new Date(note.createdAt))}</span>
                 <div className='flex items-center gap-1'>
                     <PenSquareIcon className="size-4" />
